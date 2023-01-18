@@ -29,7 +29,7 @@ export class AppComponent implements OnInit{
 
     // console.log(JSON.stringify(result));
     function sortObject(obj: object){
-      return Object.entries(obj).sort((a,b) => b[1].length-a[1].length).filter(value => value[1].length > 10);
+      return Object.entries(obj).sort((a,b) => b[1].length-a[1].length).filter(value => value[1].length > 5 && value[1].length <11);
     }
 
     // console.log(result);
